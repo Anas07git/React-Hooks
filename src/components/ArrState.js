@@ -16,6 +16,7 @@ function ArrState() {
         <ul>
         {
             items.map(item=> <li key={item.id}>{item.value}</li>)
+            
         }
         </ul>
     </div>
