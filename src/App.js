@@ -8,6 +8,7 @@ import EffectHook from './components/EffectHook';
 import OnceEffect from './components/OnceEffect';
 import ToggleMouse from './components/ToggleMouse';
 import IntervalHook from './components/IntervalHook';
+import DataFetch from './components/DataFetch';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       {/* <OnceEffect/> */}
       {/* <ToggleMouse/> */}
       {/* <IntervalHook/> */}
+      <DataFetch/>
     </div>
   );
 }
