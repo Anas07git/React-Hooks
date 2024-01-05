@@ -1,14 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-import HookCounter from './components/HookCounter';
-import PrevCount from './components/PrevCount';
-import ObjState from './components/ObjState';
-import ArrState from './components/ArrState';
-import EffectHook from './components/EffectHook';
-import OnceEffect from './components/OnceEffect';
-import ToggleMouse from './components/ToggleMouse';
-import IntervalHook from './components/IntervalHook';
-import DataFetch from './components/DataFetch';
+import logo from "./logo.svg";
+import "./App.css";
+import HookCounter from "./components/HookCounter";
+import PrevCount from "./components/PrevCount";
+import ObjState from "./components/ObjState";
+import ArrState from "./components/ArrState";
+import EffectHook from "./components/EffectHook";
+import OnceEffect from "./components/OnceEffect";
+import ToggleMouse from "./components/ToggleMouse";
+import IntervalHook from "./components/IntervalHook";
+import DataFetch from "./components/DataFetch";
+import ComponentA from "./components/ComponentA";
+import React from "react";
+
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 function App() {
   return (
@@ -21,7 +26,12 @@ function App() {
       {/* <OnceEffect/> */}
       {/* <ToggleMouse/> */}
       {/* <IntervalHook/> */}
-      <DataFetch/>
+      {/* <DataFetch/> */}
+      <UserContext.Provider value="Anas">
+        <ChannelContext.Provider value="FrontEnd">
+          <ComponentA />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }

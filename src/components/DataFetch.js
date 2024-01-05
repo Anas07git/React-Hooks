@@ -29,13 +29,13 @@ function DataFetch() {
 //         setPosts(res)
 //         console.log(res)
 //     })
-//     .catch((err)=>[
+//     .catch((err)=>{
 //         console.log(err)
-//     ])
+//     })
 // },[])
 
-// POST REQUEST
 const handleClick=()=> setIdP(id)
+// POST REQUEST
 useEffect(()=>{
     axios.get(`https://jsonplaceholder.typicode.com/posts/${idP}`)
     .then((res)=>{
