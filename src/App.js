@@ -11,6 +11,8 @@ import IntervalHook from "./components/IntervalHook";
 import DataFetch from "./components/DataFetch";
 import ComponentA from "./components/ComponentA";
 import React from "react";
+import ReduceOne from "./components/ReduceOne";
+import ReduceTwo from "./components/ReduceTwo";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -27,11 +29,13 @@ function App() {
       {/* <ToggleMouse/> */}
       {/* <IntervalHook/> */}
       {/* <DataFetch/> */}
-      <UserContext.Provider value="Anas">
+      {/* <UserContext.Provider value="Anas">
         <ChannelContext.Provider value="FrontEnd">
           <ComponentA />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+      {/* <ReduceOne/> */}
+      <ReduceTwo/>
     </div>
   );
 }
