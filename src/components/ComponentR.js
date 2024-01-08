@@ -1,10 +1,10 @@
 import React from 'react'
-import ComponentZ from './ComponentZ'
+import ComponentY from './ComponentY'
 
 function ComponentR() {
   return (
     <div>
-      <ComponentZ/>
+      <ComponentY/>
     </div>
   )
 }

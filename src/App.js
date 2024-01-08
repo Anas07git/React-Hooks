@@ -16,6 +16,9 @@ import ReduceTwo from "./components/ReduceTwo";
 import ComponentP from "./components/ComponentP";
 import ComponentQ from "./components/ComponentQ";
 import ComponentR from "./components/ComponentR";
+import RedFetchOne from "./components/RedFetchOne";
+import RedFetchTwo from "./components/RedFetchTwo";
+import Parent from "./components/useCallback/Parent";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -56,14 +59,17 @@ function App() {
       </UserContext.Provider> */}
       {/* <ReduceOne/> */}
       {/* <ReduceTwo/> */}
-      <CountContext.Provider value={{count,dispatch}}>
+      {/* <CountContext.Provider value={{count,dispatch}}>
 
         COUNT -{count}
 
       <ComponentP/>
       <ComponentQ/>
       <ComponentR/>
-      </CountContext.Provider>
+      </CountContext.Provider> */}
+      {/* <RedFetchOne/> */}
+      {/* <RedFetchTwo/> */}
+      <Parent/>
     </div>
   );
 }
