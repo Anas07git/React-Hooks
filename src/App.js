@@ -19,6 +19,7 @@ import ComponentR from "./components/ComponentR";
 import RedFetchOne from "./components/RedFetchOne";
 import RedFetchTwo from "./components/RedFetchTwo";
 import Parent from "./components/useCallback/Parent";
+import UseMemo from "./components/UseMemo";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -69,7 +70,8 @@ function App() {
       </CountContext.Provider> */}
       {/* <RedFetchOne/> */}
       {/* <RedFetchTwo/> */}
-      <Parent/>
+      {/* <Parent/> */}
+      <UseMemo/>
     </div>
   );
 }

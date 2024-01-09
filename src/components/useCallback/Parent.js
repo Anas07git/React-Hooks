@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import Button from './Button'
 import Title from './TItle'
 import Count from './Count'
@@ -15,6 +15,7 @@ function Parent() {
     const incMoney=useCallback(()=>{
         setMoney(money+1)
     },[money])
+  
 
   return (
     <div>
