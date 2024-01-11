@@ -20,6 +20,9 @@ import RedFetchOne from "./components/RedFetchOne";
 import RedFetchTwo from "./components/RedFetchTwo";
 import Parent from "./components/useCallback/Parent";
 import UseMemo from "./components/UseMemo";
+import UseRef from "./components/UseRef";
+import ClassTImer from "./components/ClassTImer";
+import HookTimer from "./components/HookTimer";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -71,7 +74,10 @@ function App() {
       {/* <RedFetchOne/> */}
       {/* <RedFetchTwo/> */}
       {/* <Parent/> */}
-      <UseMemo/>
+      {/* <UseMemo/> */}
+      {/* <UseRef/> */}
+      <ClassTImer/>
+      <HookTimer/>
     </div>
   );
 }
