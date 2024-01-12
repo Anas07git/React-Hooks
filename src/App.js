@@ -23,6 +23,9 @@ import UseMemo from "./components/UseMemo";
 import UseRef from "./components/UseRef";
 import ClassTImer from "./components/ClassTImer";
 import HookTimer from "./components/HookTimer";
+import CounterOne from "./components/CounterOne";
+import CounterTwo from "./components/CounterTwo";
+import UseForm from "./components/UseForm";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -76,8 +79,11 @@ function App() {
       {/* <Parent/> */}
       {/* <UseMemo/> */}
       {/* <UseRef/> */}
-      <ClassTImer/>
-      <HookTimer/>
+      {/* <ClassTImer/> */}
+      {/* <HookTimer/>   */}
+      {/* <CounterOne/> */}
+      {/* <CounterTwo/> */}
+      <UseForm/>
     </div>
   );
 }
