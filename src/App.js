@@ -26,6 +26,7 @@ import HookTimer from "./components/HookTimer";
 import CounterOne from "./components/CounterOne";
 import CounterTwo from "./components/CounterTwo";
 import UseForm from "./components/UseForm";
+import StateImmutability from "./components/StateImmutability";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -83,7 +84,8 @@ function App() {
       {/* <HookTimer/>   */}
       {/* <CounterOne/> */}
       {/* <CounterTwo/> */}
-      <UseForm/>
+      {/* <UseForm/> */}
+      <StateImmutability/>
     </div>
   );
 }

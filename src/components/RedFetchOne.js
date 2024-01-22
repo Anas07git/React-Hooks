@@ -7,7 +7,7 @@ function RedFetchOne() {
     const[post,setPost]=useState({})
 
     useEffect(()=>{
-        axios.get(`https://jsonplaceholder.tpicode.com/posts/1`)
+        axios.get(`https://jsonplaceholder.typicode.com/posts/1`)
         .then((res)=>{
             setLoad(false)
             setPost(res.data)

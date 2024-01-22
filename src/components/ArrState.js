@@ -4,6 +4,7 @@ function ArrState() {
     const[items,setItems]=useState([])
 
     const addItems=()=>{
+      console.log(items)
         setItems([...items,{
           id:items.length,
           value: Math.floor(Math.random()*10)+1

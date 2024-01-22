@@ -50,11 +50,13 @@ useEffect(()=>{
   return (
     <div>
         <input type="text" value={id} onChange={e=>setId(e.target.value)}/>
+
       {/* <ul>
         {
           posts.map(post=> <li key={post.id}>{post.title}</li>)
-        }
+         }
       </ul> */}
+
       <h3>{posts.title}</h3>
       <button onClick={handleClick}>Fetch Post</button>
     </div>

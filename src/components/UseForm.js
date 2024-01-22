@@ -5,7 +5,7 @@ function UseForm() {
     const[f,bindF,setF]=useInput("")
     const[l,bindL,setL]=useInput("")
 
-    const submit=(e)=>{
+    const submit=(e)=>{ 
        e.preventDefault()
        alert(`Hello ${f}  ${l}`)
        setF()
