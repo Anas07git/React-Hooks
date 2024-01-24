@@ -27,6 +27,10 @@ import CounterOne from "./components/CounterOne";
 import CounterTwo from "./components/CounterTwo";
 import UseForm from "./components/UseForm";
 import StateImmutability from "./components/StateImmutability";
+import OptParent from "./components/OptParent";
+import OptChild from "./components/OptChild";
+import OptGrand from "./components/OptGrand";
+import IncParent from "./components/IncParent";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -85,7 +89,10 @@ function App() {
       {/* <CounterOne/> */}
       {/* <CounterTwo/> */}
       {/* <UseForm/> */}
-      <StateImmutability/>
+      {/* <StateImmutability/> */}
+       {/* <OptGrand/> */}
+       {/* <OptParent/> */}
+       <IncParent/>
     </div>
   );
 }
