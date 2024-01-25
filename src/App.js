@@ -31,6 +31,7 @@ import OptParent from "./components/OptParent";
 import OptChild from "./components/OptChild";
 import OptGrand from "./components/OptGrand";
 import IncParent from "./components/IncParent";
+import ContextParent from "./components/ContextParent";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -92,7 +93,8 @@ function App() {
       {/* <StateImmutability/> */}
        {/* <OptGrand/> */}
        {/* <OptParent/> */}
-       <IncParent/>
+       {/* <IncParent/> */}
+       <ContextParent/>
     </div>
   );
 }
