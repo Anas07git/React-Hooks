@@ -1,27 +1,29 @@
-// import React, { useContext } from 'react'
-// import { CountContext } from '../App'
+import React, { useContext } from 'react'
+import { CountContext } from './ContextParent'
 
-// export const ChildA=()=>{
-//     console.log("child A")
-//     return(
-//     <ChildB/>
-//     )
-// }
+export const ChildA=()=>{
+    console.log("child A")
+    return(
+    <ChildB/>
+    )
+}
+export const MemoA= React.memo(ChildA)
 
 
-// const ChildB=()=>{
-//     console.log("child b")
-//     return(
-//     <ChildC/>
-//     )
-// }
+export const ChildB=()=>{
+    console.log("child b")
+    return(
+    <ChildC/>
+    )
+}
 
-// const ChildC=()=>{
-//     const count= useContext(CountContext)
-//     console.log("child c")
-//     return(
-//     <div>
-//      Child C -{count}
-//     </div>
-//     )
-// }
+export const ChildC=()=>{
+    const count= useContext(CountContext)
+
+    console.log("child c")
+    return(
+        <div>
+     Child C -{count}
+    </div>
+    )
+}

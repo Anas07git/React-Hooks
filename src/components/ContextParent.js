@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
-import ContextChild from './ContextChild'
+import  { MemoA } from './ContextChild'
 
 export const CountContext= React.createContext()
 
 function ContextParent() {
     const[count,setCount]=useState(0)
-
+   console.log("Parent Context")
   return (
     <>
-      <button onClick={()=> setCount(count+1)}>Count -{}</button>
+      <button onClick={()=> setCount(count+1)}>Count -{count}</button>
       <CountContext.Provider value={count}>
-        <ContextChild/>
+        <MemoA/>
       </CountContext.Provider>
     </>
   )
